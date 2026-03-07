@@ -2,14 +2,28 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { MapPin, Phone, Facebook } from "lucide-react";
 import { toast } from "sonner";
+import { supabase } from "@/integrations/supabase/client";
 
 const Contact = () => {
   const [form, setForm] = useState({ name: "", contact: "", message: "" });
+  const [sending, setSending] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success("Dziękujemy! Skontaktujemy się z Tobą wkrótce.");
-    setForm({ name: "", contact: "", message: "" });
+    setSending(true);
+    try {
+      const { data, error } = await supabase.functions.invoke("send-contact", {
+        body: { name: form.name, contact: form.contact, message: form.message },
+      });
+      if (error) throw error;
+      toast.success("Dziękujemy! Skontaktujemy się z Tobą wkrótce.");
+      setForm({ name: "", contact: "", message: "" });
+    } catch (err) {
+      console.error(err);
+      toast.error("Nie udało się wysłać wiadomości. Spróbuj ponownie.");
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -67,9 +81,10 @@ const Contact = () => {
             </div>
             <button
               type="submit"
-              className="bg-gold hover:bg-gold-light text-foreground font-body font-bold px-8 py-4 rounded-sm tracking-wide transition-colors duration-300 text-sm uppercase"
+              disabled={sending}
+              className="bg-gold hover:bg-gold-light text-foreground font-body font-bold px-8 py-4 rounded-sm tracking-wide transition-colors duration-300 text-sm uppercase disabled:opacity-50"
             >
-              Wyślij wiadomość
+              {sending ? "Wysyłanie..." : "Wyślij wiadomość"}
             </button>
           </motion.form>
 
