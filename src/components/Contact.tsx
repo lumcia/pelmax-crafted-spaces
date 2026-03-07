@@ -81,9 +81,10 @@ const Contact = () => {
             </div>
             <button
               type="submit"
-              className="bg-gold hover:bg-gold-light text-foreground font-body font-bold px-8 py-4 rounded-sm tracking-wide transition-colors duration-300 text-sm uppercase"
+              disabled={sending}
+              className="bg-gold hover:bg-gold-light text-foreground font-body font-bold px-8 py-4 rounded-sm tracking-wide transition-colors duration-300 text-sm uppercase disabled:opacity-50"
             >
-              Wyślij wiadomość
+              {sending ? "Wysyłanie..." : "Wyślij wiadomość"}
             </button>
           </motion.form>
 
