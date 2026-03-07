@@ -132,7 +132,7 @@ const Contact = () => {
             <div className="rounded-lg overflow-hidden h-64 border border-border">
               <iframe
                 title="Lokalizacja PEL-MAX"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19544.5!2d18.1!3d51.8!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471b3a0e6b7c8b0d%3A0x1!2sZelazk%C3%B3w!5e0!3m2!1spl!2spl!4v1"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2500!2d18.0969!3d51.7961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDQ3JzQ2LjAiTiAxOMKwMDUnNDguOCJF!5e0!3m2!1spl!2spl!4v1&q=Helen%C3%B3w+11A,+62-817+%C5%BBelazk%C3%B3w,+Polska"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
