@@ -88,6 +88,18 @@ const Contact = () => {
               </div>
             </div>
             <div className="flex items-start gap-4">
+              <Phone className="w-5 h-5 text-gold mt-1 shrink-0" />
+              <div>
+                <p className="font-body font-bold text-foreground">Telefon</p>
+                <a
+                  href="tel:+48698570489"
+                  className="font-body text-gold hover:text-gold-light transition-colors"
+                >
+                  +48 698 570 489
+                </a>
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
               <Facebook className="w-5 h-5 text-gold mt-1 shrink-0" />
               <div>
                 <p className="font-body font-bold text-foreground">Facebook</p>
