@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const steps = [
-  { num: "01", title: "Konsultacja", desc: "Omawiamy Twoje oczekiwania i potrzeby." },
-  { num: "02", title: "Projekt", desc: "Przygotowujemy wizualizację i plan." },
-  { num: "03", title: "Produkcja", desc: "Wykonujemy meble w naszym zakładzie." },
-  { num: "04", title: "Montaż", desc: "Instalujemy gotowe meble u Ciebie." },
+  { num: "1", title: "Konsultacja", desc: "Omawiamy Twoje oczekiwania i potrzeby." },
+  { num: "2", title: "Projekt", desc: "Przygotowujemy wizualizację i plan." },
+  { num: "3", title: "Produkcja", desc: "Wykonujemy meble w naszym zakładzie." },
+  { num: "4", title: "Montaż", desc: "Instalujemy gotowe meble u Ciebie." },
 ];
 
 const Process = () => {
