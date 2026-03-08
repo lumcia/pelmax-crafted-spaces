@@ -35,7 +35,7 @@ const Process = () => {
             >
               <div className="text-5xl font-heading font-bold text-gold mb-4">{step.num}</div>
               <h3 className="font-heading text-xl font-semibold text-primary-foreground mb-2">{step.title}</h3>
-              <p className="font-body text-primary-foreground/70 text-sm leading-relaxed whitespace-nowrap">{step.desc}</p>
+              <p className="font-body text-primary-foreground/70 text-sm leading-relaxed">{step.desc}</p>
             </motion.div>
           ))}
         </div>
