@@ -23,7 +23,7 @@ const Process = () => {
           </h2>
           <p className="text-lg text-primary-foreground/70 font-body">Od pomysłu do realizacji – w czterech prostych krokach.</p>
         </motion.div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 place-items-center">
           {steps.map((step, i) => (
             <motion.div
               key={step.num}
@@ -31,7 +31,7 @@ const Process = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.15 }}
-              className="text-center"
+              className="text-center flex flex-col items-center"
             >
               <div className="text-5xl font-heading font-bold text-gold mb-4">{step.num}</div>
               <h3 className="font-heading text-xl font-semibold text-primary-foreground mb-2">{step.title}</h3>
