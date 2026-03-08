@@ -14,7 +14,7 @@ const photos = [
   { img: gallery3, label: "Zabudowa z biurkiem" },
   { img: gallery4, label: "Komoda do sypialni" },
   { img: gallery5, label: "Łazienka – szafka pod umywalkę" },
-  { img: gallery6, label: "Wyposażenie sklepu" },
+  { img: gallery6, label: "Szafa z drzwiami przesuwnymi i lustrem" },
 ];
 
 const Gallery = () => {
