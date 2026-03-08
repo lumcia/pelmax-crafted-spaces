@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const steps = [
   { num: "1", title: "Konsultacja", desc: "Omawiamy Twoje oczekiwania i potrzeby." },
-  { num: "2", title: "Pomiar", desc: "Wykonujemy pomiar i przedstawiamy plan." },
+  { num: "2", title: "Pomiar", desc: "Przeprowadzamy pomiar i przedstawiamy plan." },
   { num: "3", title: "Produkcja", desc: "Wykonujemy meble w naszym zakładzie." },
   { num: "4", title: "Montaż", desc: "Instalujemy gotowe meble u Ciebie." },
 ];
