@@ -4,6 +4,7 @@ import catOffice from "@/assets/cat-office.jpg";
 import catShop from "@/assets/cat-shop.jpg";
 import catLiving from "@/assets/cat-living.jpg";
 import catWardrobe from "@/assets/cat-wardrobe.jpg";
+import catSliding from "@/assets/cat-sliding.png";
 
 const categories = [
   { img: catKitchen, name: "Meble kuchenne", desc: "Funkcjonalne i eleganckie kuchnie dopasowane do każdej przestrzeni." },
@@ -11,6 +12,7 @@ const categories = [
   { img: catShop, name: "Meble sklepowe", desc: "Wyposażenie handlowe, które przyciąga klientów." },
   { img: catLiving, name: "Meble pokojowe", desc: "Komfortowe meble do salonu i sypialni na wymiar." },
   { img: catWardrobe, name: "Szafy na wymiar", desc: "Zabudowy szaf i garderób wykorzystujące każdy centymetr." },
+  { img: catSliding, name: "Szafy przesuwne", desc: "Nowoczesne szafy z drzwiami przesuwnymi – oszczędność miejsca i styl." },
 ];
 
 const Offer = () => {
