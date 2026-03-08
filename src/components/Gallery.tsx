@@ -12,7 +12,7 @@ const photos = [
   { img: gallery1, label: "Zabudowa salonu" },
   { img: gallery2, label: "Garderoba na wymiar" },
   { img: gallery3, label: "Zabudowa z biurkiem" },
-  { img: gallery4, label: "Sypialnia z zabudową" },
+  { img: gallery4, label: "Komoda do sypialni" },
   { img: gallery5, label: "Łazienka – szafka pod umywalkę" },
   { img: gallery6, label: "Wyposażenie sklepu" },
 ];
