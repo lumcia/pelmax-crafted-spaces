@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
+import { X } from "lucide-react";
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
@@ -16,6 +18,8 @@ const photos = [
 ];
 
 const Gallery = () => {
+  const [lightbox, setLightbox] = useState<number | null>(null);
+
   return (
     <section id="realizacje" className="section-padding bg-background">
       <div className="max-w-7xl mx-auto">
@@ -38,6 +42,7 @@ const Gallery = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.08 }}
               className="gallery-card aspect-[4/3]"
+              onClick={() => setLightbox(i)}
             >
               <img src={photo.img} alt={photo.label} loading="lazy" />
               <div className="gallery-overlay">
@@ -47,6 +52,29 @@ const Gallery = () => {
           ))}
         </div>
       </div>
+
+      {lightbox !== null && (
+        <div
+          className="fixed inset-0 z-50 bg-foreground/90 flex items-center justify-center p-4"
+          onClick={() => setLightbox(null)}
+        >
+          <button
+            onClick={() => setLightbox(null)}
+            className="absolute top-6 right-6 text-cream hover:text-gold transition-colors"
+          >
+            <X className="w-8 h-8" />
+          </button>
+          <img
+            src={photos[lightbox].img}
+            alt={photos[lightbox].label}
+            className="max-w-full max-h-[85vh] object-contain rounded-lg"
+            onClick={(e) => e.stopPropagation()}
+          />
+          <p className="absolute bottom-6 text-cream font-body text-sm">
+            {photos[lightbox].label}
+          </p>
+        </div>
+      )}
     </section>
   );
 };
