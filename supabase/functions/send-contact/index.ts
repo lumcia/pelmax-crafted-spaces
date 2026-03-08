@@ -77,7 +77,7 @@ serve(async (req) => {
       },
       body: JSON.stringify({
         from: "PEL-MAX Formularz <onboarding@resend.dev>",
-        to: [CONTACT_EMAIL],
+        to: recipients,
         subject: `Nowa wiadomość od ${name}`,
         html: `
           <h2>Nowa wiadomość z formularza kontaktowego</h2>
