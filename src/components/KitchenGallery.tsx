@@ -20,7 +20,7 @@ const kitchenPhotos = [
   { img: kitchen6, label: "Kuchnia w kształcie U – potencjał każdego centymetra" },
   { img: kitchen7, label: "Kuchnia minimalistyczna – gładkie powierzchnie" },
   { img: kitchen8, label: "Kuchnia dwukolorowa – czerń i biel" },
-  { img: kitchen9, label: "Detale – okucia i uchwyty premium" },
+  { img: kitchen9, label: "Kuchnia z wyspą – nowoczesny design w odcieniu morskim" },
 ];
 
 const KitchenGallery = () => {
