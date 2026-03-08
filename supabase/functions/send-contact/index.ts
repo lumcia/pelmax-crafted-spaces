@@ -46,7 +46,6 @@ serve(async (req) => {
     // Send email via Resend
     const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY");
     const CONTACT_EMAIL = Deno.env.get("CONTACT_EMAIL")?.trim();
-    const CONTACT_EMAIL_2 = Deno.env.get("CONTACT_EMAIL_2")?.trim();
 
     if (!RESEND_API_KEY) {
       console.error("RESEND_API_KEY not configured");
@@ -64,11 +63,6 @@ serve(async (req) => {
       );
     }
 
-    const recipients = [CONTACT_EMAIL];
-    if (CONTACT_EMAIL_2) {
-      recipients.push(CONTACT_EMAIL_2);
-    }
-
     const emailRes = await fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: {
@@ -77,7 +71,7 @@ serve(async (req) => {
       },
       body: JSON.stringify({
         from: "PEL-MAX Formularz <onboarding@resend.dev>",
-        to: recipients,
+        to: [CONTACT_EMAIL],
         subject: `Nowa wiadomość od ${name}`,
         html: `
           <h2>Nowa wiadomość z formularza kontaktowego</h2>
