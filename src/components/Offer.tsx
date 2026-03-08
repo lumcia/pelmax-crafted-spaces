@@ -10,10 +10,10 @@ import catSliding from "@/assets/cat-sliding.png";
 
 const categories = [
   { img: catKitchen, name: "Meble kuchenne", desc: "Funkcjonalne i eleganckie kuchnie dopasowane do każdej przestrzeni." },
-  { img: catOffice, name: "Meble biurowe", desc: "Ergonomiczne rozwiązania dla nowoczesnych biur i gabinetów." },
-  { img: catShop, name: "Meble sklepowe", desc: "Wyposażenie handlowe, które przyciąga klientów." },
   { img: catLiving, name: "Meble pokojowe", desc: "Komfortowe meble do salonu i sypialni na wymiar." },
   { img: catWardrobe, name: "Szafy na wymiar", desc: "Zabudowy szaf i garderób wykorzystujące każdy centymetr." },
+  { img: catOffice, name: "Meble biurowe", desc: "Ergonomiczne rozwiązania dla nowoczesnych biur i gabinetów." },
+  { img: catShop, name: "Meble sklepowe", desc: "Wyposażenie handlowe, które przyciąga klientów." },
   { img: catSliding, name: "Szafy przesuwne", desc: "Nowoczesne szafy z drzwiami przesuwnymi – oszczędność miejsca i styl." },
 ];
 
