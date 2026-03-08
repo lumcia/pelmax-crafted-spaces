@@ -13,7 +13,7 @@ import kitchen9 from "@/assets/kitchen-9.jpg";
 
 const kitchenPhotos = [
   { img: kitchen1, label: "Kuchnia nowoczesna – zabudowa na wymiar" },
-  { img: kitchen2, label: "Kuchnia z wyspą – blat z konglomeratu" },
+  { img: kitchen2, label: "Kuchnia z wyspą – serce Twojego domu" },
   { img: kitchen3, label: "Kuchnia skandynawska – fronty matowe" },
   { img: kitchen4, label: "Kuchnia klasyczna – szafy do sufitu" },
   { img: kitchen5, label: "Szafki górne i dolne – projekt indywidualny" },
