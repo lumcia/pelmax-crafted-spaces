@@ -10,7 +10,7 @@ const cards = [
   {
     icon: Factory,
     title: "Własna produkcja",
-    desc: "Kontrolujemy każdy etap od deski do montażu.",
+    desc: "Kontrolujemy każdy etap od projektu do montażu.",
   },
   {
     icon: Wrench,
