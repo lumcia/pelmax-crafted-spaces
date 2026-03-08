@@ -17,7 +17,7 @@ const kitchenPhotos = [
   { img: kitchen3, label: "Kuchnia skandynawska – fronty matowe" },
   { img: kitchen4, label: "Kuchnia klasyczna – szafy do sufitu" },
   { img: kitchen5, label: "Kuchnia z frontami w kolorze niebieskim" },
-  { img: kitchen6, label: "Kuchnia w kształcie U – ciemne fronty" },
+  { img: kitchen6, label: "Kuchnia w kształcie U – potencjał każdego centymetra" },
   { img: kitchen7, label: "Kuchnia minimalistyczna – gładkie powierzchnie" },
   { img: kitchen8, label: "Kuchnia dwukolorowa – czerń i biel" },
   { img: kitchen9, label: "Detale – okucia i uchwyty premium" },
