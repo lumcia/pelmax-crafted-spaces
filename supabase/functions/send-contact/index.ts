@@ -45,7 +45,7 @@ serve(async (req) => {
 
     // Send email via Resend
     const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY");
-    const CONTACT_EMAIL = Deno.env.get("CONTACT_EMAIL");
+    const CONTACT_EMAIL = Deno.env.get("CONTACT_EMAIL")?.trim();
 
     if (!RESEND_API_KEY) {
       console.error("RESEND_API_KEY not configured");
